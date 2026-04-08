@@ -48,8 +48,7 @@ public class Timetable {
     }
 
 
-    public List<TrainingSession> getTrainingSessionsForDayAndTime
-            (DayOfWeek dayOfWeek, TimeOfDay timeOfDay) {
+    public List<TrainingSession> getTrainingSessionsForDayAndTime(DayOfWeek dayOfWeek, TimeOfDay timeOfDay) {
         if (!timetable.containsKey(dayOfWeek)) {
             return Collections.emptyList();
         }

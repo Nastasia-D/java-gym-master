@@ -80,9 +80,9 @@ public class TimetableTest {
         timetable.addNewTrainingSession(singleTrainingSession);
 
         //Проверить, что за понедельник в 13:00 вернулось одно занятие
-        List<TrainingSession> sessionAt13 = timetable.getTrainingSessionsForDayAndTime(DayOfWeek.MONDAY, time13);
+        List<TrainingSession> sessionAt13 = timetable.getTrainingSessionsForDayAndTime(DayOfWeek.MONDAY, new TimeOfDay(13, 0));
         assertEquals(1, sessionAt13.size());
-        assertEquals("Акробатика для детей", sessionAt13.get(0).getGroup().getName());
+        assertEquals("Акробатика для детей", sessionAt13.get(0).getGroup().getTitle());
 
         //Проверить, что за понедельник в 14:00 не вернулось занятий
         List<TrainingSession> sessionAt14 = timetable.getTrainingSessionsForDayAndTime(DayOfWeek.MONDAY, new TimeOfDay(14, 0));

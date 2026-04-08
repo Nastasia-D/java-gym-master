@@ -12,14 +12,17 @@ public class Group {
     }
 
     public String getTitle() {
+
         return title;
     }
 
     public Age getAge() {
+
         return age;
     }
 
     public int getDuration() {
+
         return duration;
     }
 }
