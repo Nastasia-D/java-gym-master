@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/java-gym-master.iml" filepath="$PROJECT_DIR$/java-gym-master.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Gym master.iml" filepath="$PROJECT_DIR$/Gym master.iml" />
+>>>>>>> 8a4d588 (Задание сделано)
     </modules>
   </component>
 </project>
