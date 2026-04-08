@@ -1,4 +1,4 @@
-package ru;
+package ru.yandex.practicum.gym;
 
 public class TrainingSession {
     private Group group;

@@ -1,4 +1,4 @@
-package ru;
+package ru.yandex.practicum.gym;
 
 import java.util.List;
 import java.util.ArrayList;
