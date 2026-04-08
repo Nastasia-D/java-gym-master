@@ -1,3 +1,4 @@
+package ru;
 import java.util.Objects;
 
 public class Coach {

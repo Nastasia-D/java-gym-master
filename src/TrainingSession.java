@@ -1,3 +1,4 @@
+package ru;
 public class TrainingSession {
     private Group group;
     private Coach coach;

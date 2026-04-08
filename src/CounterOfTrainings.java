@@ -1,3 +1,4 @@
+package ru;
 public class CounterOfTrainings {
     private final Coach coach;
     private final int count;

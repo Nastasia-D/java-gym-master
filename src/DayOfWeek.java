@@ -1,3 +1,4 @@
+package ru;
 public enum DayOfWeek {
     MONDAY,
     TUESDAY,

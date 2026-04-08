@@ -1,3 +1,4 @@
+package ru;
 public class TimeOfDay {
     private int hours;
     private int minutes;
