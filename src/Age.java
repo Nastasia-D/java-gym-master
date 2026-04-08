@@ -1,5 +1,7 @@
 
-package ru;public enum Age {
+package ru;
+
+public enum Age {
     CHILD,
     ADULT
 }

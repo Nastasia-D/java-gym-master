@@ -1,15 +1,19 @@
 package ru;
+
 public class CounterOfTrainings {
     private final Coach coach;
     private final int count;
+
     public CounterOfTrainings(Coach coach, int count) {
         this.coach = coach;
         this.count = count;
     }
 
     public Coach getCoach() {
-        return coach; }
+        return coach;
+    }
 
     public int getCount() {
-        return count; }
+        return count;
+    }
 }

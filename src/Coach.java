@@ -1,4 +1,5 @@
 package ru;
+
 import java.util.Objects;
 
 public class Coach {
@@ -13,6 +14,7 @@ public class Coach {
     }
 
     public String getSurname() {
+
         return surname;
     }
 
@@ -21,8 +23,10 @@ public class Coach {
     }
 
     public String getMiddleName() {
+
         return middleName;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -33,6 +37,7 @@ public class Coach {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(name);
     }
 }

@@ -1,4 +1,5 @@
 package ru;
+
 public class Group {
     private String title;
     private Age age;

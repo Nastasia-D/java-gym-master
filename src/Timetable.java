@@ -1,4 +1,5 @@
 package ru;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -14,7 +15,7 @@ public class Timetable {
         DayOfWeek day = trainingSession.getDayOfWeek();
         TimeOfDay time = trainingSession.getTimeOfDay();
 
-        if (!timetable.containsKey(day)){
+        if (!timetable.containsKey(day)) {
             timetable.put(day, new TreeMap<>(new Comparator<TimeOfDay>() {
                 @Override
                 public int compare(TimeOfDay t1, TimeOfDay t2) {
@@ -24,7 +25,7 @@ public class Timetable {
                     return Integer.compare(t1.getMinutes(), t2.getMinutes());
                 }
             }));
-                }
+        }
         TreeMap<TimeOfDay, List<TrainingSession>> daySchedule = timetable.get(day);
         if (!daySchedule.containsKey(time)) {
             daySchedule.put(time, new ArrayList<>());
@@ -44,10 +45,10 @@ public class Timetable {
         }
 
         return result;
-        }
+    }
 
 
-    public List<TrainingSession>  getTrainingSessionsForDayAndTime
+    public List<TrainingSession> getTrainingSessionsForDayAndTime
             (DayOfWeek dayOfWeek, TimeOfDay timeOfDay) {
         if (!timetable.containsKey(dayOfWeek)) {
             return Collections.emptyList();
@@ -78,4 +79,4 @@ public class Timetable {
         });
         return resultList;
     }
-    }
+}

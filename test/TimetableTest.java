@@ -1,6 +1,9 @@
 package ru;
+
 import org.junit.jupiter.api.Test;
+
 import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TimetableTest {
@@ -60,10 +63,10 @@ public class TimetableTest {
         // Проверить, что за вторник не вернулось занятий
         assertEquals(20, thursdaySessions.get(1).getTimeOfDay().getHours(),
                 "Вторым должно идти занятие на 20:00");
-    List<TrainingSession> tuesdaySessions = timetable.getTrainingSessionsForDay(DayOfWeek.TUESDAY);
+        List<TrainingSession> tuesdaySessions = timetable.getTrainingSessionsForDay(DayOfWeek.TUESDAY);
 
-    assertTrue(tuesdaySessions.isEmpty(), "Во вторник занятий быть не должно");
-}
+        assertTrue(tuesdaySessions.isEmpty(), "Во вторник занятий быть не должно");
+    }
 
     @Test
     void testGetTrainingSessionsForDayAndTime() {
